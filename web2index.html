@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Search and Gallery</title>
+    <link rel="stylesheet" href="web2style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Project Search and Gallery</h1>
+        </header>
+        <main>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for projects...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="error-message" class="hidden"></div>
+            <div id="results" class="results"></div>
+            <section id="image-gallery" class="image-gallery">
+                <a href="details.html?project=1" class="image-card" data-name="Arduino Uno">
+                    <img src="https://wokwi.com/images/homepage/arduino-uno.svg" alt="Arduino Uno">
+                    <p class="image-text">Arduino Uno</p>
+                </a>
+                <a href="details2.html" class="image-card" data-name="Esp 32">
+                    <img src="https://wokwi.com/images/homepage/esp32.svg" alt="Esp 32">
+                    <p class="image-text">Esp 32</p>
+                </a>
+                <a href="details3.html" class="image-card" data-name="Raspberry Pi">
+                    <img src="https://wokwi.com/images/homepage/pi-pico.svg" alt="Raspberry Pi">
+                    <p class="image-text">Raspberry Pi</p>
+                </a>
+                <a href="details4.html" class="image-card" data-name="STM32">
+                    <img src="https://wokwi.com/images/homepage/stm32.svg" alt="STM32">
+                    <p class="image-text">STM32</p>
+                </a>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="web2script.js"></script>
+    </div>
+</body>
+</html>
